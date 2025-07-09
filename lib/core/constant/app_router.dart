@@ -1,4 +1,5 @@
 import 'package:foodninja/presentation/on_boarding/views/page_view.dart';
+import 'package:foodninja/presentation/on_boarding/widgets/on_boarding2.dart';
 import 'package:foodninja/presentation/splash_view/splash_view.dart';
 import 'package:go_router/go_router.dart';
 
@@ -9,6 +10,7 @@ class AppRouter {
   static final router = GoRouter(
     routes: [
       GoRoute(path: '/', builder: (context, state) => SplashView()),
+      GoRoute(path: konboarding2, builder: (context, state) => OnBoarding2()),
       GoRoute(path: kpageviewbody, builder: (context, state) => PageViewBody()),
     ],
   );

@@ -8,7 +8,7 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
-
+    
       child: Container(
         height: MediaQuery.of(context).size.height * (57 / 812),
         width: MediaQuery.of(context).size.width * (157 / 375),
@@ -20,7 +20,7 @@ class CustomButton extends StatelessWidget {
             colors: [Color(0xff4ce389), Color(0xff1ec47a)],
           ),
         ),
-
+    
         child: Center(
           child: Text(
             text,

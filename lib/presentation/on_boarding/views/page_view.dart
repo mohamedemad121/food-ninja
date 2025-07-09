@@ -7,6 +7,6 @@ class PageViewBody extends StatelessWidget {
   final List<Widget> pages = [OnBoarding1(), OnBoarding2()];
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: PageView(children: pages));
+    return  PageView(children: pages);
   }
 }
