@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:foodninja/core/components/custom_button.dart';
 import 'package:foodninja/core/components/custom_text_field.dart';
 import 'package:foodninja/core/components/sign_stack.dart';
+import 'package:foodninja/core/constant/app_router.dart';
 import 'package:foodninja/presentation/sign_up/widgets/sign_in_with.dart';
+import 'package:go_router/go_router.dart';
 
 class SignUp extends StatelessWidget {
   const SignUp({super.key});
@@ -34,7 +36,13 @@ class SignUp extends StatelessWidget {
             ),
           ),
           SizedBox(height: 36),
-          CustomButton(text: 'Login'),
+          InkWell(
+            onTap: () {
+              context.go(AppRouter.ksignin);
+            },
+
+            child: CustomButton(text: 'Login'),
+          ),
         ],
       ),
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodninja/core/constant/image_manger.dart';
 
 class SignInWith extends StatelessWidget {
   const SignInWith({super.key});
@@ -23,7 +24,7 @@ class SignInWith extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Image.asset(
-                  'assets/images/facebook-3 1@2x.png',
+                  ImageManger.facebook,
                   height: 25,
                   width: 25,
                 ),
@@ -46,7 +47,7 @@ class SignInWith extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Image.asset(
-                  'assets/images/google-icon 1.png',
+                 ImageManger.google,
                   height: 25,
                   width: 25,
                 ),

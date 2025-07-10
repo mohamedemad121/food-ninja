@@ -23,7 +23,7 @@ class SignStack extends StatelessWidget {
         ),
 
         Positioned(
-          top: 186,
+          top: MediaQuery.of(context).size.height * (186 / 812),
           child: ShaderMask(
             shaderCallback:
                 (bounds) => LinearGradient(
@@ -39,7 +39,7 @@ class SignStack extends StatelessWidget {
           ),
         ),
         Positioned(
-          top: 234,
+          top: MediaQuery.of(context).size.height * (235 / 812),
           child: Text(
             'Deliever Favorite Food',
             style: TextStyle(
@@ -50,7 +50,7 @@ class SignStack extends StatelessWidget {
           ),
         ),
         Positioned(
-          top: 300,
+          top: MediaQuery.of(context).size.height * (310 / 812),
           child: Text(
             text,
             style: TextStyle(
