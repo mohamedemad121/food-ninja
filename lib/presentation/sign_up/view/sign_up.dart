@@ -12,38 +12,44 @@ class SignUp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          SignStack(text: 'Login To Your Account'),
-          SizedBox(height: 66),
-          CustomTextField(hintText: 'Email'),
-          SizedBox(height: 12),
-          CustomTextField(hintText: 'Password'),
-          SizedBox(height: 20),
-          Text(
-            'or continue with',
-            style: TextStyle(color: Colors.black, fontSize: 12, fontFamily: ''),
-          ),
-          SizedBox(height: 20),
-          SignInWith(),
-          SizedBox(height: 20),
-          Text(
-            'Forget Your Password',
-            style: TextStyle(
-              fontSize: 14,
-              fontFamily: 'BentonSans',
-              color: Color(0xff4bdc8c),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SignStack(text: 'Login To Your Account'),
+            SizedBox(height: 66),
+            CustomTextField(hintText: 'Email'),
+            SizedBox(height: 12),
+            CustomTextField(hintText: 'Password'),
+            SizedBox(height: 20),
+            Text(
+              'or continue with',
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 12,
+                fontFamily: '',
+              ),
             ),
-          ),
-          SizedBox(height: 36),
-          InkWell(
-            onTap: () {
-              context.go(AppRouter.ksignin);
-            },
+            SizedBox(height: 20),
+            SignInWith(),
+            SizedBox(height: 20),
+            Text(
+              'Forget Your Password',
+              style: TextStyle(
+                fontSize: 14,
+                fontFamily: 'BentonSans',
+                color: Color(0xff4bdc8c),
+              ),
+            ),
+            SizedBox(height: 36),
+            InkWell(
+              onTap: () {
+                context.go(AppRouter.ksignin);
+              },
 
-            child: CustomButton(text: 'Login'),
-          ),
-        ],
+              child: CustomButton(text: 'Login'),
+            ),
+          ],
+        ),
       ),
     );
   }

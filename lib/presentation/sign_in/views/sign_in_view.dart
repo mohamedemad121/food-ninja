@@ -9,25 +9,27 @@ class SignInView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          SignStack(text: 'Sign Up For Free'),
-          SizedBox(height: 65),
-          CustomSignInTextField(
-            hintText: 'Anamwp',
-            prefixIcon: Image.asset(ImageManger.profile),
-          ),
-          SizedBox(height: 12),
-          CustomSignInTextField(
-            hintText: 'Anamwp',
-            prefixIcon: Image.asset(ImageManger.messege),
-          ),
-          SizedBox(height: 12),
-          CustomSignInTextField(
-            hintText: 'Anamwp',
-            prefixIcon: Image.asset(ImageManger.lock),
-          ),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SignStack(text: 'Sign Up For Free'),
+            SizedBox(height: 65),
+            CustomSignInTextField(
+              hintText: 'Anamwp',
+              prefixIcon: Image.asset(ImageManger.profile),
+            ),
+            SizedBox(height: 12),
+            CustomSignInTextField(
+              hintText: 'Anamwp',
+              prefixIcon: Image.asset(ImageManger.messege),
+            ),
+            SizedBox(height: 12),
+            CustomSignInTextField(
+              hintText: 'Anamwp',
+              prefixIcon: Image.asset(ImageManger.lock),
+            ),
+          ],
+        ),
       ),
     );
   }
