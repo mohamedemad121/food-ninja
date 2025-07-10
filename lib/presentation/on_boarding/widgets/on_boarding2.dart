@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:foodninja/core/components/custom_button.dart';
+import 'package:foodninja/core/constant/app_router.dart';
 import 'package:foodninja/core/constant/image_manger.dart';
+import 'package:go_router/go_router.dart';
 
 class OnBoarding2 extends StatelessWidget {
   const OnBoarding2({super.key});
@@ -47,7 +49,12 @@ class OnBoarding2 extends StatelessWidget {
             style: TextStyle(fontSize: 12, color: Colors.black),
           ),
           SizedBox(height: 42),
-          CustomButton(text: 'Next'),
+          CustomButton(
+            text: 'Next',
+            onTap: () {
+              context.push(AppRouter.ksignup);
+            },
+          ),
         ],
       ),
     );
