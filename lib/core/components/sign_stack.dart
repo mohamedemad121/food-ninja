@@ -50,7 +50,7 @@ class SignStack extends StatelessWidget {
           ),
         ),
         Positioned(
-          top: MediaQuery.of(context).size.height * (310 / 812),
+          top: MediaQuery.of(context).size.height * (315 / 812),
           child: Text(
             text,
             style: TextStyle(
