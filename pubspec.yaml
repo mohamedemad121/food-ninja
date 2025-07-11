@@ -52,7 +52,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
-    - assets/svg/
+    
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
   # For details regarding adding assets from package dependencies, see
@@ -72,6 +72,12 @@ flutter:
     - family: BentonSansUltraCondensedRegular
       fonts:
         - asset: assets/fonts/BentonSansUltraCondensedRegular.otf
+    - family: BentonSansBook
+      fonts:
+        - asset: assets/fonts/BentonSansBook.otf
+    - family: BentonSansMedium
+      fonts:
+        - asset: assets/fonts/BentonSansMedium.otf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

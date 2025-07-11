@@ -9,4 +9,6 @@ class ImageManger {
   static const profile = 'assets/images/Profile.png';
   static const messege = 'assets/images/Message.png';
   static const lock = 'assets/images/Lock.png';
+    static const check = 'assets/images/Check List Icon.png';
 }
+

@@ -10,25 +10,36 @@ class SignInView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            SignStack(text: 'Sign Up For Free'),
-            SizedBox(height: 65),
-            CustomSignInTextField(
-              hintText: 'Anamwp',
-              prefixIcon: Image.asset(ImageManger.profile),
-            ),
-            SizedBox(height: 12),
-            CustomSignInTextField(
-              hintText: 'Anamwp',
-              prefixIcon: Image.asset(ImageManger.messege),
-            ),
-            SizedBox(height: 12),
-            CustomSignInTextField(
-              hintText: 'Anamwp',
-              prefixIcon: Image.asset(ImageManger.lock),
-            ),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 25),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              SignStack(text: 'Sign Up For Free'),
+              SizedBox(height: 65),
+              CustomSignInTextField(
+                hintText: 'Anamwp',
+                prefixIcon: Image.asset(ImageManger.profile),
+              ),
+              SizedBox(height: 12),
+              CustomSignInTextField(
+                hintText: 'Anamwp',
+                prefixIcon: Image.asset(ImageManger.messege),
+              ),
+              SizedBox(height: 12),
+              CustomSignInTextField(
+                hintText: 'Anamwp',
+                prefixIcon: Image.asset(ImageManger.lock),
+              ),
+              Row(
+                children: [
+                  SizedBox(child: Image.asset(ImageManger.check)),
+                  SizedBox(width: 7),
+                  Text('Keep Me Signed In', style: TextStyle(height: 0.166)),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );
