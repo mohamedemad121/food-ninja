@@ -5,8 +5,9 @@ import 'package:foodninja/core/constant/svg_manger.dart';
 import 'package:go_router/go_router.dart';
 
 class StackSignProcess extends StatelessWidget {
-  const StackSignProcess({super.key, required this.top});
+  const StackSignProcess({super.key, required this.top, required this.text});
 final double top;
+final String text;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -45,7 +46,7 @@ final double top;
 
               child: Center(
                 child: Text(
-                  'Fill In Your bio To Get\nstarted',
+                  text,
                   style: TextStyle(
                     fontSize: 25,
                     fontFamily: 'BentonSans',
@@ -55,7 +56,7 @@ final double top;
               ),
             ),
             Positioned(
-              top:top ,
+              top: top,
               child: Text(
                 'This data will be displayed in your account\nprofile for security',
                 style: TextStyle(

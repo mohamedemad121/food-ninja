@@ -13,7 +13,7 @@ class SignInProcess extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          StackSignProcess(top: 188),
+          StackSignProcess(top: 188, text: 'Fill in your bio to get\nstarted'),
           SizedBox(height: 20),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 14),
@@ -30,11 +30,14 @@ class SignInProcess extends StatelessWidget {
             child: CustomTextField(hintText: ' Mobile Number'),
           ),
           SizedBox(height: 220),
-          Center(child: InkWell(
-            onTap: () {
-              context.push(AppRouter.kpaymentview);
-            },
-            child: CustomButton(text: 'Next'))),
+          Center(
+            child: InkWell(
+              onTap: () {
+                context.push(AppRouter.kpaymentview);
+              },
+              child: CustomButton(text: 'Next'),
+            ),
+          ),
         ],
       ),
     );

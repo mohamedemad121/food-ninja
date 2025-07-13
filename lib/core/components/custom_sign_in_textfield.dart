@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
 
 class CustomSignInTextField extends StatelessWidget {
-  const CustomSignInTextField({
-    super.key,
-    required this.hintText,
-    required this.prefixIcon,
-  });
-  final String hintText;
-  final Widget prefixIcon;
+  const CustomSignInTextField({super.key, this.hintText, this.prefixIcon});
+  final String? hintText;
+  final Widget? prefixIcon;
   @override
   Widget build(BuildContext context) {
     return Padding(
