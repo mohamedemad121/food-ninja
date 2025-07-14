@@ -6,11 +6,13 @@ class PaymentCont extends StatelessWidget {
     super.key,
     required this.height,
     required this.edgeInsetsGeometry,
-    required this.svgPicture,
+    this.svgPicture,
+    this.image,
   });
   final double height;
   final EdgeInsetsGeometry edgeInsetsGeometry;
-  final SvgPicture svgPicture;
+  final SvgPicture? svgPicture;
+  final Image? image;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -22,6 +24,10 @@ class PaymentCont extends StatelessWidget {
           decoration: BoxDecoration(
             color: Color(0xffFFFFFF),
             borderRadius: BorderRadius.circular(22),
+            image:
+                image != null
+                    ? DecorationImage(image: image!.image, fit: BoxFit.cover)
+                    : null,
           ),
           child: Center(child: svgPicture),
         ),

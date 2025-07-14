@@ -6,4 +6,5 @@ class SvgManger {
   static const grouplogo = 'assets/svg/Group.svg';
   static const cameraicon = 'assets/svg/Camera Icon.svg';
   static const galleryicon = 'assets/svg/Gallery Icon.svg';
+  static const location = 'assets/svg/Pin Logo.svg';
 }

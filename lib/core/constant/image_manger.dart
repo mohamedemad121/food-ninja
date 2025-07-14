@@ -11,4 +11,5 @@ class ImageManger {
   static const lock = 'assets/images/Lock.png';
   static const check = 'assets/images/Check List Icon.png';
   static const background = 'assets/images/BACKGROUND 2.png';
+  static const uploadimage = 'assets/images/Photo.png';
 }
