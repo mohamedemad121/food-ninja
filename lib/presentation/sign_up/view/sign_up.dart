@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:foodninja/core/components/custom_button.dart';
 import 'package:foodninja/core/components/custom_text_field.dart';
@@ -32,18 +33,25 @@ class SignUp extends StatelessWidget {
             SizedBox(height: 20),
             SignInWith(),
             SizedBox(height: 20),
-            Text(
-              'Forget Your Password',
-              style: TextStyle(
-                fontSize: 14,
-                fontFamily: 'BentonSans',
-                color: Color(0xff4bdc8c),
+            RichText(
+              text: TextSpan(
+                text: 'Forget Your Password',
+                style: TextStyle(
+                  color: Color(0xff53E88B),
+                  fontSize: 12,
+                  fontFamily: 'BentonSansMedium',
+                ),
+                recognizer:
+                    TapGestureRecognizer()
+                      ..onTap = () {
+                        context.push(AppRouter.ksigninprocess);
+                      },
               ),
             ),
             SizedBox(height: 36),
             InkWell(
               onTap: () {
-                context.go(AppRouter.ksignin);
+                context.push(AppRouter.ksignin);
               },
 
               child: CustomButton(text: 'Login'),

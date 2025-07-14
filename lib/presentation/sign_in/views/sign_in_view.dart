@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:foodninja/core/components/custom_button.dart';
 import 'package:foodninja/core/components/custom_sign_in_textfield.dart';
@@ -6,9 +7,16 @@ import 'package:foodninja/core/constant/app_router.dart';
 import 'package:foodninja/core/constant/image_manger.dart';
 import 'package:go_router/go_router.dart';
 
-class SignInView extends StatelessWidget {
+class SignInView extends StatefulWidget {
   const SignInView({super.key});
 
+  @override
+  State<SignInView> createState() => _SignInViewState();
+}
+
+class _SignInViewState extends State<SignInView> {
+  bool status = false;
+  bool emailme = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,9 +46,16 @@ class SignInView extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Image.asset(ImageManger.check),
+                  Checkbox(
+                    activeColor: Colors.blue,
+                    value: status,
+                    onChanged: (value) {
+                      setState(() {
+                        status = value!;
+                      });
+                    },
+                  ),
 
-                  SizedBox(width: 7),
                   Text(
                     'Keep Me Signed In',
                     style: TextStyle(
@@ -56,9 +71,16 @@ class SignInView extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Image.asset(ImageManger.check),
+                  Checkbox(
+                    activeColor: Colors.blue,
+                    value: emailme,
+                    onChanged: (value) {
+                      setState(() {
+                        emailme = value!;
+                      });
+                    },
+                  ),
 
-                  SizedBox(width: 7),
                   Text(
                     'Email Me About Special Pricing',
                     style: TextStyle(
@@ -84,13 +106,19 @@ class SignInView extends StatelessWidget {
                     begin: Alignment.centerLeft,
                     end: Alignment.centerRight,
                   ).createShader(Rect.fromLTWH(0, 0, 200, bounds.height)),
-              child: Text(
-                'Already have an account',
-                style: TextStyle(
-                  color: Color(0xff53E88B),
-                  fontSize: 12,
-                  fontFamily: 'BentonSansMedium',
+              child: RichText(
+                text: TextSpan(
+                  text: 'Already have an account',
+                  style: TextStyle(
+                    color: Color(0xff53E88B),
+                    fontSize: 12,
+                    fontFamily: 'BentonSansMedium',
+                  ),
+                  recognizer: TapGestureRecognizer()..onTap =(){
+Navigator.pop(context);
+                  }
                 ),
+                
               ),
             ),
           ],
@@ -99,3 +127,9 @@ class SignInView extends StatelessWidget {
     );
   }
 }
+// 'Already have an account',
+//                 style: TextStyle(
+//                   color: Color(0xff53E88B),
+//                   fontSize: 12,
+//                   fontFamily: 'BentonSansMedium',
+//                 ),
