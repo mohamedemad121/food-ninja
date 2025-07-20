@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:foodninja/core/components/custom_button.dart';
 import 'package:foodninja/core/components/stack_sign_process.dart';
 import 'package:foodninja/core/constant/app_router.dart';
-import 'package:foodninja/core/constant/svg_manger.dart';
-import 'package:foodninja/presentation/paymentview/widgets/payment_cont.dart';
+import 'package:foodninja/presentation/uploadphoto1/widgets/gallery_camera.dart';
+import 'package:foodninja/presentation/uploadphoto1/widgets/upload_photo_cont.dart';
 import 'package:go_router/go_router.dart';
 
 class UploadPhoto1 extends StatelessWidget {
@@ -17,21 +16,14 @@ class UploadPhoto1 extends StatelessWidget {
         children: [
           StackSignProcess(top: 188, text: 'Upload Your Photo\nProfile'),
           SizedBox(height: 20),
-          PaymentCont(
-            height: 129,
-            edgeInsetsGeometry: EdgeInsetsGeometry.symmetric(horizontal: 25),
-            svgPicture: SvgPicture.asset(SvgManger.galleryicon),
-          ),
-          SizedBox(height: 20),
-          PaymentCont(
-            height: 129,
-            edgeInsetsGeometry: EdgeInsetsGeometry.symmetric(horizontal: 25),
-            svgPicture: SvgPicture.asset(SvgManger.cameraicon),
-          ),
-          SizedBox(height: 165),
+          UploadPhotoCont(),
+
+          SizedBox(height: 40),
+          GalleryCamera(),
+
           InkWell(
             onTap: () {
-              context.push(AppRouter.kuploadpreview);
+              context.push(AppRouter.ksetlocation);
             },
 
             child: CustomButton(text: 'Next'),
