@@ -13,6 +13,7 @@ class UploadPhotoCont extends StatelessWidget {
       child: Container(
         height: MediaQuery.of(context).size.height * (220 / 810),
         decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(15 ),
           color: Color(0xffFFFFFF),
           image: DecorationImage(
             fit: BoxFit.cover,
