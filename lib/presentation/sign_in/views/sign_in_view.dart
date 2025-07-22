@@ -15,6 +15,7 @@ class SignInView extends StatefulWidget {
 }
 
 class _SignInViewState extends State<SignInView> {
+  bool ispasswordvisible = false;
   bool status = false;
   bool emailme = false;
   @override
@@ -37,9 +38,20 @@ class _SignInViewState extends State<SignInView> {
             ),
             SizedBox(height: 12),
             CustomSignInTextField(
-              hintText: 'Anamwp',
+              obscuretext: !ispasswordvisible,
+              hintText: 'Password',
               prefixIcon: Image.asset(ImageManger.lock),
-              suffixIcon: Icon(Icons.visibility),
+              suffixIcon: IconButton(
+                onPressed: () {
+                  setState(() {
+                    ispasswordvisible = !ispasswordvisible;
+                  });
+                },
+                icon:
+                    ispasswordvisible
+                        ? Icon(Icons.visibility)
+                        : Icon(Icons.visibility_off),
+              ),
             ),
             SizedBox(height: 19),
             Padding(

@@ -6,17 +6,19 @@ class CustomSignInTextField extends StatelessWidget {
     this.hintText,
     this.prefixIcon,
     this.contentpadding,
-    this.suffixIcon,
+    this.suffixIcon, this.obscuretext =false,
   });
   final String? hintText;
   final Widget? prefixIcon, suffixIcon;
-
   final EdgeInsetsGeometry? contentpadding;
+  final bool obscuretext;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 25),
       child: TextField(
+       obscureText: obscuretext ,
         decoration: InputDecoration(
           contentPadding: contentpadding,
           hintText: hintText,

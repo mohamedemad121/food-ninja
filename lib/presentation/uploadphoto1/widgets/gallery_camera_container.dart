@@ -12,7 +12,7 @@ class GalleryCameraContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Container(
+      child: SizedBox(
           height: MediaQuery.of(context).size.height * (100 / 810),
           width: MediaQuery.of(context).size.width * (100 / 375),
         child: Column(
