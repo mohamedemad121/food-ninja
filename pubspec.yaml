@@ -65,21 +65,14 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Viga
-      fonts:
-        - asset: assets/fonts/Viga-Regular.ttf
     - family: BentonSans
       fonts:
+        - asset: assets/fonts/Viga-Regular.ttf
         - asset: assets/fonts/BentonSansBold.otf
-    - family: BentonSansUltraCondensedRegular
-      fonts:
         - asset: assets/fonts/BentonSansUltraCondensedRegular.otf
-    - family: BentonSansBook
-      fonts:
-        - asset: assets/fonts/BentonSansBook.otf
-    - family: BentonSansMedium
-      fonts:
         - asset: assets/fonts/BentonSansMedium.otf
+        - asset: assets/fonts/BentonSansBook.otf
+
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

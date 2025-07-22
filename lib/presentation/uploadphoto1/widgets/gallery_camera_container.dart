@@ -13,23 +13,21 @@ class GalleryCameraContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        child: SizedBox(
           height: MediaQuery.of(context).size.height * (100 / 810),
           width: MediaQuery.of(context).size.width * (100 / 375),
-          child: Column(
-            children: [
-              SvgPicture.asset(image),
-              SizedBox(height: 9),
-              Text(
-                text,
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 14,
-                  fontFamily: 'BentonSans',
-                ),
+        child: Column(
+          children: [
+            SvgPicture.asset(image),
+            SizedBox(height: 9),
+            Text(
+              text,
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 14,
+                fontFamily: 'BentonSans',
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

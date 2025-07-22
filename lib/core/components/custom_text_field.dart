@@ -9,7 +9,7 @@ class CustomTextField extends StatelessWidget {
       decoration: InputDecoration(
         contentPadding: EdgeInsets.symmetric(horizontal: 28, vertical: 20),
         hintText: hintText,
-        hintStyle: TextStyle(color: Color(0xff3B3B3B).withOpacity(0.3)),
+        hintStyle: TextStyle(color: Color(0xff3B3B3B)),
         filled: true,
         fillColor: Color(0xffFFFFFF),
         enabledBorder: OutlineInputBorder(

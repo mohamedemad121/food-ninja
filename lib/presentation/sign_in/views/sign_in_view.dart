@@ -39,6 +39,7 @@ class _SignInViewState extends State<SignInView> {
             CustomSignInTextField(
               hintText: 'Anamwp',
               prefixIcon: Image.asset(ImageManger.lock),
+              suffixIcon: Icon(Icons.visibility),
             ),
             SizedBox(height: 19),
             Padding(
@@ -47,7 +48,7 @@ class _SignInViewState extends State<SignInView> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Checkbox(
-                    activeColor: Colors.blue,
+                    activeColor: Color(0xff15BE77),
                     value: status,
                     onChanged: (value) {
                       setState(() {
@@ -72,7 +73,7 @@ class _SignInViewState extends State<SignInView> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Checkbox(
-                    activeColor: Colors.blue,
+                    activeColor: Color(0xff15BE77),
                     value: emailme,
                     onChanged: (value) {
                       setState(() {
@@ -114,11 +115,12 @@ class _SignInViewState extends State<SignInView> {
                     fontSize: 12,
                     fontFamily: 'BentonSansMedium',
                   ),
-                  recognizer: TapGestureRecognizer()..onTap =(){
-Navigator.pop(context);
-                  }
+                  recognizer:
+                      TapGestureRecognizer()
+                        ..onTap = () {
+                          Navigator.pop(context);
+                        },
                 ),
-                
               ),
             ),
           ],

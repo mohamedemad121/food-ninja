@@ -1,33 +1,42 @@
 import 'package:flutter/material.dart';
 
 class CustomSignInTextField extends StatelessWidget {
-  const CustomSignInTextField({super.key, this.hintText, this.prefixIcon, this.contentpadding});
+  const CustomSignInTextField({
+    super.key,
+    this.hintText,
+    this.prefixIcon,
+    this.contentpadding,
+    this.suffixIcon,
+  });
   final String? hintText;
-  final Widget? prefixIcon;
-final EdgeInsetsGeometry? contentpadding;
+  final Widget? prefixIcon, suffixIcon;
+
+  final EdgeInsetsGeometry? contentpadding;
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 25),
       child: TextField(
         decoration: InputDecoration(
-          contentPadding:contentpadding,
+          contentPadding: contentpadding,
           hintText: hintText,
-          hintStyle: TextStyle(color: Color(0xff3B3B3B).withOpacity(0.3)),
+          hintStyle: TextStyle(color: Colors.grey),
           prefixIcon: prefixIcon,
+          suffixIcon: suffixIcon,
           filled: true,
           fillColor: Color(0xffFFFFFF),
 
-          enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(15),
-            borderSide: BorderSide(color: Color(0xffF4F4F4)),
-          ),
-          focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(15),
-            borderSide: BorderSide(color: Color(0xffF4F4F4)),
-          ),
+          enabledBorder: outLineInputBorder(),
+          focusedBorder: outLineInputBorder(),
         ),
       ),
+    );
+  }
+
+  OutlineInputBorder outLineInputBorder() {
+    return OutlineInputBorder(
+      borderRadius: BorderRadius.circular(15),
+      borderSide: BorderSide(color: Color(0xffF4F4F4)),
     );
   }
 }
