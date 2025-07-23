@@ -12,7 +12,7 @@ class CustomSignInTextField extends StatelessWidget {
   final Widget? prefixIcon, suffixIcon;
   final EdgeInsetsGeometry? contentpadding;
   final bool obscuretext;
-
+  
   @override
   Widget build(BuildContext context) {
     return Padding(

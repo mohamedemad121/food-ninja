@@ -73,6 +73,9 @@ flutter:
         - asset: assets/fonts/BentonSansMedium.otf
         - asset: assets/fonts/BentonSansBook.otf
 
+    - family: BentonSansbold
+      fonts:
+        - asset: assets/fonts/BentonSansBold.otf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

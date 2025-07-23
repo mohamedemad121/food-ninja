@@ -4,6 +4,7 @@ import 'package:foodninja/presentation/paymentview/views/payment_view.dart';
 import 'package:foodninja/presentation/set_location/views/set_location.dart';
 import 'package:foodninja/presentation/sign_in/views/sign_in_view.dart';
 import 'package:foodninja/presentation/sign_up/view/sign_up.dart';
+import 'package:foodninja/presentation/sign_up_success/views/sign_up_notifiction.dart';
 import 'package:foodninja/presentation/sing_in_process/views/sign_in_process.dart';
 import 'package:foodninja/presentation/splash_view/splash_view.dart';
 import 'package:foodninja/presentation/uploadphoto1/views/upload_photo1.dart';
@@ -20,6 +21,7 @@ class AppRouter {
   static const kuploadphoto1 = '/uploadphoto1';
   static const kuploadpreview = '/uploadpreview';
   static const ksetlocation = '/setlocation';
+  static const ksignupnotifiction = '/signupnotifiction';
 
   static final router = GoRouter(
     routes: [
@@ -36,6 +38,7 @@ class AppRouter {
       GoRoute(path: kuploadphoto1, builder: (context, state) => UploadPhoto1()),
 
       GoRoute(path: ksetlocation, builder: (context, state) => SetLocation()),
+      GoRoute(path: ksignupnotifiction, builder: (context, state) => SignUpNotifiction()),
     ],
   );
 }
