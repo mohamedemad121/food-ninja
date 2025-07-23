@@ -15,7 +15,7 @@ class SetLocation extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          StackSignProcess(top: 156, text: 'Set Your Location'),
+          StackSignProcess(top: 156, text: 'Set Your Location',teext: 'This data will be displayed in your account\nprofile for security'),
           SizedBox(height: 20),
           Padding(
             padding: const EdgeInsets.only(left: 27),

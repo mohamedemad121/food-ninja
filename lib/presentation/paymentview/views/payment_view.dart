@@ -15,7 +15,7 @@ class PaymentView extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          StackSignProcess(top: 156, text: 'Payment Method'),
+          StackSignProcess(top: 156, text: 'Payment Method',teext: 'This data will be displayed in your account\nprofile for security',),
           SizedBox(height: 20),
           PaymentCont(
             height: MediaQuery.of(context).size.height * (73 / 810),

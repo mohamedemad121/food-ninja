@@ -5,9 +5,14 @@ import 'package:foodninja/core/constant/svg_manger.dart';
 import 'package:go_router/go_router.dart';
 
 class StackSignProcess extends StatelessWidget {
-  const StackSignProcess({super.key, required this.top, required this.text});
-final double top;
-final String text;
+  const StackSignProcess({
+    super.key,
+    required this.top,
+    required this.text,
+    required this.teext,
+  });
+  final double top;
+  final String text, teext;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -49,7 +54,7 @@ final String text;
                   text,
                   style: TextStyle(
                     fontSize: 25,
-                    fontFamily: 'BentonSans',
+                    fontFamily: 'BentonSansbold',
                     color: Colors.black,
                   ),
                 ),
@@ -58,7 +63,7 @@ final String text;
             Positioned(
               top: top,
               child: Text(
-                'This data will be displayed in your account\nprofile for security',
+                teext,
                 style: TextStyle(
                   fontSize: 12,
                   fontFamily: 'BentonSansBook',
@@ -72,3 +77,4 @@ final String text;
     );
   }
 }
+//'This data will be displayed in your account\nprofile for security'

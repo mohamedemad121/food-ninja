@@ -8,6 +8,8 @@ import 'package:foodninja/presentation/sign_up_success/views/sign_up_notifiction
 import 'package:foodninja/presentation/sing_in_process/views/sign_in_process.dart';
 import 'package:foodninja/presentation/splash_view/splash_view.dart';
 import 'package:foodninja/presentation/uploadphoto1/views/upload_photo1.dart';
+import 'package:foodninja/presentation/verifiction_code/views/verifiction_code.dart';
+import 'package:foodninja/presentation/via_method/views/via_method.dart';
 import 'package:go_router/go_router.dart';
 
 class AppRouter {
@@ -22,7 +24,8 @@ class AppRouter {
   static const kuploadpreview = '/uploadpreview';
   static const ksetlocation = '/setlocation';
   static const ksignupnotifiction = '/signupnotifiction';
-
+static const kverifictioncode ='/verifictioncode';
+static const kviamethod ='/viamethod';
   static final router = GoRouter(
     routes: [
       GoRoute(path: '/', builder: (context, state) => SplashView()),
@@ -39,6 +42,8 @@ class AppRouter {
 
       GoRoute(path: ksetlocation, builder: (context, state) => SetLocation()),
       GoRoute(path: ksignupnotifiction, builder: (context, state) => SignUpNotifiction()),
+    GoRoute(path: kverifictioncode, builder: (context, state) => VerifictionCode()),
+    GoRoute(path: kviamethod, builder: (context, state) => ViaMethod()),
     ],
   );
 }

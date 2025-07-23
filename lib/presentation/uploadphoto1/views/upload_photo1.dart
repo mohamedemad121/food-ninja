@@ -49,7 +49,7 @@ class _UploadPhoto1State extends State<UploadPhoto1> {
     return Scaffold(
       body: Column(
         children: [
-          StackSignProcess(top: 188, text: 'Upload Your Photo\nProfile'),
+          StackSignProcess(top: 188, text: 'Upload Your Photo\nProfile',teext: 'This data will be displayed in your account\nprofile for security',),
           SizedBox(height: 20),
           UploadPhotoCont(imagefile: file),
 

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:foodninja/core/components/custom_button.dart';
 import 'package:foodninja/core/components/sign_up_success.dart';
+import 'package:foodninja/core/constant/app_router.dart';
+import 'package:go_router/go_router.dart';
 
 class SignUpNotifiction extends StatelessWidget {
   const SignUpNotifiction({super.key});
@@ -38,7 +40,12 @@ class SignUpNotifiction extends StatelessWidget {
             ),
           ),
           SizedBox(height: 129),
-          CustomButton(text: 'Try Order'),
+          InkWell(
+            onTap: () {
+              context.push(AppRouter.kverifictioncode);
+            },
+            child: CustomButton(text: 'Try Order'),
+          ),
         ],
       ),
     );

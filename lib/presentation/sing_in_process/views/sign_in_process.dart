@@ -13,7 +13,7 @@ class SignInProcess extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          StackSignProcess(top: 188, text: 'Fill in your bio to get\nstarted'),
+          StackSignProcess(top: 188, text: 'Fill in your bio to get\nstarted',teext: 'This data will be displayed in your account\nprofile for security',),
           SizedBox(height: 20),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 14),
