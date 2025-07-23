@@ -7,4 +7,8 @@ class SvgManger {
   static const cameraicon = 'assets/svg/camera.svg';
   static const galleryicon = 'assets/svg/Gallery.svg';
   static const location = 'assets/svg/Pin Logo.svg';
+  static const messege = 'assets/svg/Message.svg';
+  static const email = 'assets/svg/Email.svg';
+  static const frame = 'assets/svg/Frame 2.svg';
+
 }

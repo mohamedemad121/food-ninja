@@ -70,13 +70,17 @@ flutter:
       fonts:
         - asset: assets/fonts/Viga-Regular.ttf
         - asset: assets/fonts/BentonSansBold.otf
-        - asset: assets/fonts/BentonSansUltraCondensedRegular.otf
+
         - asset: assets/fonts/BentonSansMedium.otf
         - asset: assets/fonts/BentonSansBook.otf
-
+        - asset: assets/fonts/BentonSansUltraCondensedRegular.otf
     - family: BentonSansbold
       fonts:
         - asset: assets/fonts/BentonSansBold.otf
+    - family: BentonSansBook
+      fonts:
+        - asset: assets/fonts/BentonSansBook.otf
+
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

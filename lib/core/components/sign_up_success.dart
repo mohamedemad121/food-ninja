@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:foodninja/core/constant/image_manger.dart';
 
 class SignUpSuccess extends StatelessWidget {
-  const SignUpSuccess({super.key});
+  const SignUpSuccess({super.key, });
 
   @override
   Widget build(BuildContext context) {

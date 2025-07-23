@@ -1,5 +1,7 @@
+import 'package:foodninja/presentation/notificion_success/notifiction_success.dart';
 import 'package:foodninja/presentation/on_boarding/views/page_view.dart';
 import 'package:foodninja/presentation/on_boarding/widgets/on_boarding2.dart';
+import 'package:foodninja/presentation/password/password.dart';
 import 'package:foodninja/presentation/paymentview/views/payment_view.dart';
 import 'package:foodninja/presentation/set_location/views/set_location.dart';
 import 'package:foodninja/presentation/sign_in/views/sign_in_view.dart';
@@ -24,8 +26,10 @@ class AppRouter {
   static const kuploadpreview = '/uploadpreview';
   static const ksetlocation = '/setlocation';
   static const ksignupnotifiction = '/signupnotifiction';
-static const kverifictioncode ='/verifictioncode';
-static const kviamethod ='/viamethod';
+  static const kverifictioncode = '/verifictioncode';
+  static const kviamethod = '/viamethod';
+  static const kpassword = '/password';
+  static const kNotifictionSuccess = '/NotifictionSuccess';
   static final router = GoRouter(
     routes: [
       GoRoute(path: '/', builder: (context, state) => SplashView()),
@@ -41,9 +45,20 @@ static const kviamethod ='/viamethod';
       GoRoute(path: kuploadphoto1, builder: (context, state) => UploadPhoto1()),
 
       GoRoute(path: ksetlocation, builder: (context, state) => SetLocation()),
-      GoRoute(path: ksignupnotifiction, builder: (context, state) => SignUpNotifiction()),
-    GoRoute(path: kverifictioncode, builder: (context, state) => VerifictionCode()),
-    GoRoute(path: kviamethod, builder: (context, state) => ViaMethod()),
+      GoRoute(
+        path: ksignupnotifiction,
+        builder: (context, state) => SignUpNotifiction(),
+      ),
+      GoRoute(
+        path: kverifictioncode,
+        builder: (context, state) => VerifictionCode(),
+      ),
+      GoRoute(path: kviamethod, builder: (context, state) => ViaMethod()),
+      GoRoute(path: kpassword, builder: (context, state) => Password()),
+      GoRoute(
+        path: kNotifictionSuccess,
+        builder: (context, state) => NotifictionSuccess(),
+      ),
     ],
   );
 }
