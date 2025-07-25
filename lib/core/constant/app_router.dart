@@ -1,3 +1,4 @@
+import 'package:foodninja/presentation/navigation_bar/navigation_bar.dart';
 import 'package:foodninja/presentation/notificion_success/notifiction_success.dart';
 import 'package:foodninja/presentation/on_boarding/views/page_view.dart';
 import 'package:foodninja/presentation/on_boarding/widgets/on_boarding2.dart';
@@ -30,6 +31,7 @@ class AppRouter {
   static const kviamethod = '/viamethod';
   static const kpassword = '/password';
   static const kNotifictionSuccess = '/NotifictionSuccess';
+  static const knavigationbar = '/navigationbar';
   static final router = GoRouter(
     routes: [
       GoRoute(path: '/', builder: (context, state) => SplashView()),
@@ -59,6 +61,7 @@ class AppRouter {
         path: kNotifictionSuccess,
         builder: (context, state) => NotifictionSuccess(),
       ),
+      GoRoute(path: knavigationbar, builder: (context, state) => NavBar()),
     ],
   );
 }

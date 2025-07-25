@@ -10,5 +10,8 @@ class SvgManger {
   static const messege = 'assets/svg/Message.svg';
   static const email = 'assets/svg/Email.svg';
   static const frame = 'assets/svg/Frame 2.svg';
-
+  static const buy = 'assets/svg/Buy.svg';
+  static const home = 'assets/svg/Home.svg';
+  static const profile = 'assets/svg/Profile.svg';
+  static const chat = 'assets/svg/Chat.svg';
 }

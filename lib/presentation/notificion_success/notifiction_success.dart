@@ -4,9 +4,22 @@ import 'package:foodninja/core/components/sign_up_success.dart';
 import 'package:foodninja/core/constant/app_router.dart';
 import 'package:go_router/go_router.dart';
 
-class NotifictionSuccess extends StatelessWidget {
+class NotifictionSuccess extends StatefulWidget {
   const NotifictionSuccess({super.key});
 
+  @override
+  State<NotifictionSuccess> createState() => _NotifictionSuccessState();
+}
+
+class _NotifictionSuccessState extends State<NotifictionSuccess> {
+  @override
+  void initState() {
+    super.initState();
+    Future.delayed(Duration(seconds: 3),(){
+
+      context.push(AppRouter.knavigationbar);
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
