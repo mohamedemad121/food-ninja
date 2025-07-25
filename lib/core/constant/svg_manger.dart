@@ -14,4 +14,7 @@ class SvgManger {
   static const home = 'assets/svg/Home.svg';
   static const profile = 'assets/svg/Profile.svg';
   static const chat = 'assets/svg/Chat.svg';
+  static const iconnotif = 'assets/svg/Icon Notifiaction.svg';
+  static const iconsearch = 'assets/svg/Icon Search.svg';
+  static const filter = 'assets/svg/Filter Icon.svg';
 }

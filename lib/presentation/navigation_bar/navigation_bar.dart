@@ -37,13 +37,21 @@ class _NavBarState extends State<NavBar> {
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
             selectedIndex: selectedIndex,
             onTabChange: (value) {
-              selectedIndex=value;
+              setState(() {
+                selectedIndex = value;
+              });
             },
             tabs: [
               GButton(
                 icon: FontAwesomeIcons.house,
                 iconSize: 0,
-                leading: SvgPicture.asset(SvgManger.home),
+                leading: SvgPicture.asset(
+                  SvgManger.home,
+                  colorFilter: ColorFilter.mode(
+                    selectedIndex == 0 ? Color(0xff2ccd7f) : Color(0xff99e9c0),
+                    BlendMode.srcIn,
+                  ),
+                ),
 
                 text: 'Home',
 
