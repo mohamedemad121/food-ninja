@@ -13,4 +13,6 @@ class ImageManger {
   static const background = 'assets/images/BACKGROUND 2.png';
   static const uploadimage = 'assets/images/Photo.png';
   static const success = 'assets/images/success.png';
+  static const pattern = 'assets/images/Pattern.png';
+  static const stackhome = 'assets/images/Image.png';
 }
