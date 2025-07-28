@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:foodninja/core/constant/app_router.dart';
+import 'package:go_router/go_router.dart';
 
 class PopularResturant extends StatelessWidget {
-  const PopularResturant({super.key, required this.text});
-final String text;
+  const PopularResturant({super.key, required this.text, required this.text2, this.onTap});
+  final String text,text2;
+  final Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -18,12 +21,15 @@ final String text;
               fontSize: 15,
             ),
           ),
-          Text(
-            'View More',
-            style: TextStyle(
-              color: Color(0xffff9c65),
-              fontFamily: 'BentonSansBook',
-              fontSize: 12,
+          InkWell(
+            onTap: onTap,
+            child: Text(
+              text2,
+              style: TextStyle(
+                color: Color(0xffff9c65),
+                fontFamily: 'BentonSansBook',
+                fontSize: 12,
+              ),
             ),
           ),
         ],

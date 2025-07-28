@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:foodninja/presentation/home_view/widgets/filter_text.dart';
+import 'package:foodninja/core/constant/app_router.dart';
+import 'package:foodninja/core/components/filter_text.dart';
 import 'package:foodninja/presentation/home_view/widgets/list_view_popular.dart';
 import 'package:foodninja/presentation/home_view/widgets/list_view_popular_menu.dart';
 import 'package:foodninja/presentation/home_view/widgets/popular_resturant.dart';
 import 'package:foodninja/presentation/home_view/widgets/stack_home.dart';
-import 'package:foodninja/presentation/home_view/widgets/stack_navbar.dart';
+import 'package:foodninja/core/components/stack_navbar.dart';
+import 'package:go_router/go_router.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -21,7 +23,13 @@ class HomeView extends StatelessWidget {
           SliverToBoxAdapter(child: StackHome()),
           SliverToBoxAdapter(child: SizedBox(height: 25)),
           SliverToBoxAdapter(
-            child: PopularResturant(text: 'Popular resturant'),
+            child: PopularResturant(
+              onTap: () {
+                context.push(AppRouter.kexploreresturant);
+              },
+              text2: 'View More',
+              text: 'Popular resturant',
+            ),
           ),
           SliverToBoxAdapter(child: SizedBox(height: 20)),
           SliverToBoxAdapter(
@@ -34,7 +42,9 @@ class HomeView extends StatelessWidget {
             ),
           ),
           SliverToBoxAdapter(child: SizedBox(height: 20)),
-          SliverToBoxAdapter(child: PopularResturant(text: 'Popular menu')),
+          SliverToBoxAdapter(
+            child: PopularResturant(text2: 'View More', text: 'Popular menu'),
+          ),
           SliverToBoxAdapter(child: SizedBox(height: 20)),
           SliverToBoxAdapter(
             child: Padding(
