@@ -24,12 +24,9 @@ class HomeView extends StatelessWidget {
           SliverToBoxAdapter(
             child: SizedBox(
               height: MediaQuery.of(context).size.height * (184 / 810),
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: 2,
-                itemBuilder: (context, index) {
-                  return ListViewPopular();
-                },
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25),
+                child: ListViewPopular(),
               ),
             ),
           ),
