@@ -71,9 +71,9 @@ flutter:
         - asset: assets/fonts/Viga-Regular.ttf
         - asset: assets/fonts/BentonSansBold.otf
 
-        - asset: assets/fonts/BentonSansMedium.otf
-        - asset: assets/fonts/BentonSansBook.otf
-        - asset: assets/fonts/BentonSansUltraCondensedRegular.otf
+        
+       
+        
     - family: BentonSansbold
       fonts:
         - asset: assets/fonts/BentonSansBold.otf
@@ -83,7 +83,12 @@ flutter:
     - family: roboto
       fonts:
         - asset: assets/fonts/Roboto-Regular.ttf
-
+    - family: BentonSansmeduim
+      fonts:
+        - asset: assets/fonts/BentonSansMedium.otf
+    - family: BentonSansUltraCondensedRegular
+      fonts:
+        - asset: assets/fonts/BentonSansUltraCondensedRegular.otf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

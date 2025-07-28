@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:foodninja/presentation/home_view/widgets/filter_text.dart';
 import 'package:foodninja/presentation/home_view/widgets/list_view_popular.dart';
+import 'package:foodninja/presentation/home_view/widgets/list_view_popular_menu.dart';
 import 'package:foodninja/presentation/home_view/widgets/popular_resturant.dart';
 import 'package:foodninja/presentation/home_view/widgets/stack_home.dart';
 import 'package:foodninja/presentation/home_view/widgets/stack_navbar.dart';
@@ -19,7 +20,9 @@ class HomeView extends StatelessWidget {
           SliverToBoxAdapter(child: SizedBox(height: 20)),
           SliverToBoxAdapter(child: StackHome()),
           SliverToBoxAdapter(child: SizedBox(height: 25)),
-          SliverToBoxAdapter(child: PopularResturant()),
+          SliverToBoxAdapter(
+            child: PopularResturant(text: 'Popular resturant'),
+          ),
           SliverToBoxAdapter(child: SizedBox(height: 20)),
           SliverToBoxAdapter(
             child: SizedBox(
@@ -28,6 +31,15 @@ class HomeView extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 25),
                 child: ListViewPopular(),
               ),
+            ),
+          ),
+          SliverToBoxAdapter(child: SizedBox(height: 20)),
+          SliverToBoxAdapter(child: PopularResturant(text: 'Popular menu')),
+          SliverToBoxAdapter(child: SizedBox(height: 20)),
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 25),
+              child: ListViewPopularMenu(),
             ),
           ),
         ],

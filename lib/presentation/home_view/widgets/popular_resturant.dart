@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class PopularResturant extends StatelessWidget {
-  const PopularResturant({super.key});
-
+  const PopularResturant({super.key, required this.text});
+final String text;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -11,7 +11,7 @@ class PopularResturant extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            'Popular Resturant',
+            text,
             style: TextStyle(
               color: Colors.black,
               fontFamily: 'BentonSansbold',

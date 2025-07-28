@@ -22,4 +22,7 @@ class ImageManger {
   static const healthy = 'assets/images/healthy.png';
   static const goodfood = 'assets/images/goodfood.png';
   static const chef = 'assets/images/chef.png';
+  static const menu2 = 'assets/images/Menu Photo.png';
+  static const photomenue = 'assets/images/Photo 1Menu.png';
+  static const photomenue2 = 'assets/images/Photo Menu (2).png';
 }
