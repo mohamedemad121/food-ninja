@@ -15,4 +15,11 @@ class ImageManger {
   static const success = 'assets/images/success.png';
   static const pattern = 'assets/images/Pattern.png';
   static const stackhome = 'assets/images/Image.png';
+  static const smart = 'assets/images/smart.png';
+  static const vegan = 'assets/images/vegan.png';
+  static const recto = 'assets/images/recto.png';
+
+  static const healthy = 'assets/images/healthy.png';
+  static const goodfood = 'assets/images/goodfood.png';
+  static const chef = 'assets/images/chef.png';
 }

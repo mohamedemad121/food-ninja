@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:foodninja/models/list_tile_model.dart';
 
 class ListViewPopular extends StatelessWidget {
-  const ListViewPopular({super.key});
+   ListViewPopular({super.key, });
+final List<ListTileModel>listmodel =[
+
+
+
+];
 
   @override
   Widget build(BuildContext context) {
