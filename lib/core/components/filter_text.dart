@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:foodninja/core/constant/svg_manger.dart';
 import 'package:foodninja/presentation/home_view/widgets/custom_textsearch.dart';
 
 class FilterText extends StatelessWidget {
-  const FilterText({super.key});
-
+  const FilterText({super.key, this.onTap, this.svg});
+  final Function()? onTap;
+  final String? svg;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -14,7 +14,7 @@ class FilterText extends StatelessWidget {
         children: [
           Expanded(child: CustomTextsearch()),
           SizedBox(width: 9),
-          SvgPicture.asset(SvgManger.filter),
+          if (svg != null) InkWell(onTap: onTap, child: SvgPicture.asset(svg!)),
         ],
       ),
     );

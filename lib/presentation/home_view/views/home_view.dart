@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:foodninja/core/constant/app_router.dart';
 import 'package:foodninja/core/components/filter_text.dart';
+import 'package:foodninja/core/components/stack_navbar.dart';
+import 'package:foodninja/core/constant/app_router.dart';
+import 'package:foodninja/core/constant/svg_manger.dart';
 import 'package:foodninja/presentation/home_view/widgets/list_view_popular.dart';
 import 'package:foodninja/presentation/home_view/widgets/list_view_popular_menu.dart';
 import 'package:foodninja/presentation/home_view/widgets/popular_resturant.dart';
 import 'package:foodninja/presentation/home_view/widgets/stack_home.dart';
-import 'package:foodninja/core/components/stack_navbar.dart';
 import 'package:go_router/go_router.dart';
 
 class HomeView extends StatelessWidget {
@@ -18,7 +19,14 @@ class HomeView extends StatelessWidget {
         slivers: [
           SliverToBoxAdapter(child: StackNavbar()),
           SliverToBoxAdapter(child: SizedBox(height: 18)),
-          SliverToBoxAdapter(child: FilterText()),
+          SliverToBoxAdapter(
+            child: FilterText(
+              onTap: () {
+                context.push(AppRouter.kfilter);
+              },
+              svg: SvgManger.filter,
+            ),
+          ),
           SliverToBoxAdapter(child: SizedBox(height: 20)),
           SliverToBoxAdapter(child: StackHome()),
           SliverToBoxAdapter(child: SizedBox(height: 25)),

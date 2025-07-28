@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:foodninja/core/components/filter_text.dart';
 import 'package:foodninja/core/components/stack_navbar.dart';
+import 'package:foodninja/core/constant/svg_manger.dart';
 import 'package:foodninja/presentation/explore_resturant/widgets/grid_popular.dart';
 
 class ExploreResturant extends StatelessWidget {
@@ -16,7 +17,7 @@ class ExploreResturant extends StatelessWidget {
             children: [
               StackNavbar(),
               SizedBox(height: 18),
-              FilterText(),
+              FilterText(svg: SvgManger.filter),
               SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 31),

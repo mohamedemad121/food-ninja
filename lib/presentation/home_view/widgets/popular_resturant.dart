@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:foodninja/core/constant/app_router.dart';
-import 'package:go_router/go_router.dart';
 
 class PopularResturant extends StatelessWidget {
   const PopularResturant({super.key, required this.text, required this.text2, this.onTap});
