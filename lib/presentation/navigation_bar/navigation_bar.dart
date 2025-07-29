@@ -74,7 +74,10 @@ class _NavBarState extends State<NavBar> {
               GButton(
                 icon: FontAwesomeIcons.house,
                 iconSize: 0,
-                leading: SvgPicture.asset(SvgManger.chat),
+                leading:
+                    selectedIndex == 3
+                        ? SvgPicture.asset(SvgManger.chat2)
+                        : SvgPicture.asset(SvgManger.chat),
                 text: 'Chat',
                 borderRadius: BorderRadius.circular(12),
               ),

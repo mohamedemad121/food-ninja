@@ -51,7 +51,13 @@ class HomeView extends StatelessWidget {
           ),
           SliverToBoxAdapter(child: SizedBox(height: 20)),
           SliverToBoxAdapter(
-            child: PopularResturant(text2: 'View More', text: 'Popular menu'),
+            child: PopularResturant(
+              onTap: () {
+                context.push(AppRouter.kexploremenu);
+              },
+              text2: 'View More',
+              text: 'Popular menu',
+            ),
           ),
           SliverToBoxAdapter(child: SizedBox(height: 20)),
           SliverToBoxAdapter(

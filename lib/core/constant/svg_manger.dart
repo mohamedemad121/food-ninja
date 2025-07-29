@@ -17,5 +17,5 @@ class SvgManger {
   static const iconnotif = 'assets/svg/Icon Notifiaction.svg';
   static const iconsearch = 'assets/svg/Icon Search.svg';
   static const filter = 'assets/svg/Filter Icon.svg';
-
+  static const chat2 = 'assets/svg/Icon Chat.svg';
 }

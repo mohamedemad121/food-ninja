@@ -1,3 +1,4 @@
+import 'package:foodninja/presentation/explore_menu/explore_menu.dart';
 import 'package:foodninja/presentation/explore_resturant/views/explore_resturant.dart';
 import 'package:foodninja/presentation/filter/view/filter.dart';
 import 'package:foodninja/presentation/navigation_bar/navigation_bar.dart';
@@ -36,6 +37,7 @@ class AppRouter {
   static const knavigationbar = '/navigationbar';
   static const kexploreresturant = '/exploreresturant';
   static const kfilter = '/filter';
+  static const kexploremenu = '/exploremenu';
   static final router = GoRouter(
     routes: [
       GoRoute(path: '/', builder: (context, state) => SplashView()),
@@ -71,6 +73,7 @@ class AppRouter {
         builder: (context, state) => ExploreResturant(),
       ),
       GoRoute(path: kfilter, builder: (context, state) => FilterSearch()),
+      GoRoute(path: kexploremenu, builder: (context, state) => ExploreMenu()),
     ],
   );
 }

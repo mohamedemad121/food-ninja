@@ -46,6 +46,7 @@ class ListViewPopularMenu extends StatelessWidget {
             ],
           ),
         ),
+        SizedBox(height: 20),
         ListTile(
           leading: Image.asset(ImageManger.photomenue),
           title: Row(
@@ -83,6 +84,7 @@ class ListViewPopularMenu extends StatelessWidget {
             ],
           ),
         ),
+        SizedBox(height: 20),
         ListTile(
           leading: Image.asset(ImageManger.photomenue2),
           title: Row(
