@@ -1,3 +1,4 @@
+import 'package:foodninja/presentation/chat_deatils/views/chat_deatils.dart';
 import 'package:foodninja/presentation/explore_menu/explore_menu.dart';
 import 'package:foodninja/presentation/explore_resturant/views/explore_resturant.dart';
 import 'package:foodninja/presentation/filter/view/filter.dart';
@@ -38,6 +39,7 @@ class AppRouter {
   static const kexploreresturant = '/exploreresturant';
   static const kfilter = '/filter';
   static const kexploremenu = '/exploremenu';
+  static const kchatdeatils = '/chatdeatils';
   static final router = GoRouter(
     routes: [
       GoRoute(path: '/', builder: (context, state) => SplashView()),
@@ -74,6 +76,7 @@ class AppRouter {
       ),
       GoRoute(path: kfilter, builder: (context, state) => FilterSearch()),
       GoRoute(path: kexploremenu, builder: (context, state) => ExploreMenu()),
+      GoRoute(path: kchatdeatils, builder: (context, state) => ChatDeatils()),
     ],
   );
 }

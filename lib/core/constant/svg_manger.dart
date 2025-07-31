@@ -18,4 +18,6 @@ class SvgManger {
   static const iconsearch = 'assets/svg/Icon Search.svg';
   static const filter = 'assets/svg/Filter Icon.svg';
   static const chat2 = 'assets/svg/Icon Chat.svg';
+  static const point = 'assets/svg/Ellipse 184.svg';
+  static const calllogo = 'assets/svg/Call logo.svg';
 }
