@@ -25,4 +25,8 @@ class ImageManger {
   static const menu2 = 'assets/images/Menu Photo.png';
   static const photomenue = 'assets/images/Photo 1Menu.png';
   static const photomenue2 = 'assets/images/Photo Menu (2).png';
+  static const pattern2 = 'assets/images/Pattern2.png';
+  static const anamwp = 'assets/images/anamwp.png';
+  static const hawkins = 'assets/images/Hawkins.png';
+  static const leslie = 'assets/images/leslie.png';
 }
