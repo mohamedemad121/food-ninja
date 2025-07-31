@@ -1,3 +1,4 @@
+import 'package:foodninja/presentation/call_ringing/views/call_ringing.dart';
 import 'package:foodninja/presentation/chat_deatils/views/chat_deatils.dart';
 import 'package:foodninja/presentation/explore_menu/explore_menu.dart';
 import 'package:foodninja/presentation/explore_resturant/views/explore_resturant.dart';
@@ -40,6 +41,7 @@ class AppRouter {
   static const kfilter = '/filter';
   static const kexploremenu = '/exploremenu';
   static const kchatdeatils = '/chatdeatils';
+  static const kcallringing = '/callringing';
   static final router = GoRouter(
     routes: [
       GoRoute(path: '/', builder: (context, state) => SplashView()),
@@ -77,6 +79,7 @@ class AppRouter {
       GoRoute(path: kfilter, builder: (context, state) => FilterSearch()),
       GoRoute(path: kexploremenu, builder: (context, state) => ExploreMenu()),
       GoRoute(path: kchatdeatils, builder: (context, state) => ChatDeatils()),
+      GoRoute(path: kcallringing, builder: (context, state) => CallRinging()),
     ],
   );
 }

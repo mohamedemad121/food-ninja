@@ -29,4 +29,6 @@ class ImageManger {
   static const anamwp = 'assets/images/anamwp.png';
   static const hawkins = 'assets/images/Hawkins.png';
   static const leslie = 'assets/images/leslie.png';
+  static const ringing = 'assets/images/ringing.png';
+  static const volume = 'assets/images/Volume Up.png';
 }

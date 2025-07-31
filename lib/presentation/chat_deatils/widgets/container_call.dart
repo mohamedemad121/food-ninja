@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:foodninja/core/constant/app_router.dart';
 import 'package:foodninja/core/constant/svg_manger.dart';
+import 'package:go_router/go_router.dart';
 
 class ContainerCall extends StatelessWidget {
   const ContainerCall({super.key, this.image});
@@ -61,9 +63,14 @@ class ContainerCall extends StatelessWidget {
 
           Padding(
             padding: const EdgeInsets.only(left: 81, right: 28),
-            child: CircleAvatar(
-              backgroundColor: Color(0xffe8f9f1),
-              child: SvgPicture.asset(SvgManger.calllogo),
+            child: InkWell(
+              onTap: () {
+                context.push(AppRouter.kcallringing);
+              },
+              child: CircleAvatar(
+                backgroundColor: Color(0xffe8f9f1),
+                child: SvgPicture.asset(SvgManger.calllogo),
+              ),
             ),
           ),
         ],

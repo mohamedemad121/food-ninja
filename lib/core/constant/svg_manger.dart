@@ -20,4 +20,7 @@ class SvgManger {
   static const chat2 = 'assets/svg/Icon Chat.svg';
   static const point = 'assets/svg/Ellipse 184.svg';
   static const calllogo = 'assets/svg/Call logo.svg';
+  static const send = 'assets/svg/Vector.svg';
+  static const volumeoff = 'assets/svg/Volume Off.svg';
+  static const x = 'assets/svg/Group 764.svg';
 }
