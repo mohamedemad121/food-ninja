@@ -3,7 +3,7 @@ import 'package:foodninja/core/constant/image_manger.dart';
 
 class CallRingingStack extends StatelessWidget {
   const CallRingingStack({super.key, required this.image});
-final String image;
+  final String image;
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;

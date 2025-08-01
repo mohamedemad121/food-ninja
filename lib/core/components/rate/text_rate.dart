@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:foodninja/core/components/rate/rate_star.dart';
 
 class TextRate extends StatelessWidget {
-  const TextRate({super.key});
-
+  const TextRate({super.key, required this.text1, required this.text2});
+  final String text1,text2;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -13,12 +13,12 @@ class TextRate extends StatelessWidget {
           style: TextStyle(fontSize: 25, fontFamily: 'BentonSansbold'),
         ),
         Text(
-          'Order Completed',
+          text1,
           style: TextStyle(fontSize: 25, fontFamily: 'BentonSansbold'),
         ),
         SizedBox(height: 20),
         Text(
-          'Please rate your last Driver',
+         text2,
           style: TextStyle(
             color: Colors.grey,
             fontSize: 14,

@@ -14,7 +14,7 @@ class TextFieldRate extends StatelessWidget {
           prefixIcon: Padding(
             padding: const EdgeInsets.only(
               top: 15,
-              left: 39,
+              left: 19,
               right: 6,
               bottom: 16,
             ),

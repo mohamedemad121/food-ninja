@@ -10,6 +10,8 @@ import 'package:foodninja/presentation/on_boarding/views/page_view.dart';
 import 'package:foodninja/presentation/on_boarding/widgets/on_boarding2.dart';
 import 'package:foodninja/presentation/password/password.dart';
 import 'package:foodninja/presentation/paymentview/views/payment_view.dart';
+import 'package:foodninja/presentation/rate_food/rate_food.dart';
+import 'package:foodninja/presentation/rate_resturant/rate_resturant.dart';
 import 'package:foodninja/presentation/set_location/views/set_location.dart';
 import 'package:foodninja/presentation/sign_in/views/sign_in_view.dart';
 import 'package:foodninja/presentation/sign_up/view/sign_up.dart';
@@ -43,7 +45,9 @@ class AppRouter {
   static const kexploremenu = '/exploremenu';
   static const kchatdeatils = '/chatdeatils';
   static const kcallringing = '/callringing';
-   static const kfinishorder = '/finishorder';
+  static const kfinishorder = '/finishorder';
+  static const kratefood = '/ratefood';
+  static const krateresturant= '/rateresturant';
   static final router = GoRouter(
     routes: [
       GoRoute(path: '/', builder: (context, state) => SplashView()),
@@ -82,7 +86,9 @@ class AppRouter {
       GoRoute(path: kexploremenu, builder: (context, state) => ExploreMenu()),
       GoRoute(path: kchatdeatils, builder: (context, state) => ChatDeatils()),
       GoRoute(path: kcallringing, builder: (context, state) => CallRinging()),
-        GoRoute(path: kfinishorder, builder: (context, state) => FinishOrder()),
+      GoRoute(path: kfinishorder, builder: (context, state) => FinishOrder()),
+      GoRoute(path: kratefood, builder: (context, state) => RateFood()),
+      GoRoute(path: krateresturant, builder: (context, state) => RateResturant()),
     ],
   );
 }
