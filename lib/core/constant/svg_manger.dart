@@ -23,4 +23,7 @@ class SvgManger {
   static const send = 'assets/svg/Vector.svg';
   static const volumeoff = 'assets/svg/Volume Off.svg';
   static const x = 'assets/svg/Group 764.svg';
+  static const star = 'assets/svg/Star.svg';
+  static const star2 = 'assets/svg/Star2.svg';
+  static const editicon = 'assets/svg/edit Icon.svg';
 }

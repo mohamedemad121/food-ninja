@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:foodninja/core/constant/image_manger.dart';
 
 class CallRingingStack extends StatelessWidget {
-  const CallRingingStack({super.key});
-
+  const CallRingingStack({super.key, required this.image});
+final String image;
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
@@ -17,7 +17,7 @@ class CallRingingStack extends StatelessWidget {
           Positioned(
             top: height * (200 / 812),
             left: width * (106 / 375),
-            child: Image.asset(ImageManger.ringing),
+            child: Image.asset(image),
           ),
         ],
       ),

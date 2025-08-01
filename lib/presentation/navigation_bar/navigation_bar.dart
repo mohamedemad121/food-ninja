@@ -25,7 +25,7 @@ class _NavBarState extends State<NavBar> {
       body: pages[selectedIndex],
       bottomNavigationBar: Container(
         margin: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-        decoration: BoxDecoration(
+        decoration: BoxDecoration( 
           borderRadius: BorderRadius.circular(20),
           color: Color(0xffFFFFFF),
         ),

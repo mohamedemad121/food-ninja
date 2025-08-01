@@ -3,6 +3,7 @@ import 'package:foodninja/presentation/chat_deatils/views/chat_deatils.dart';
 import 'package:foodninja/presentation/explore_menu/explore_menu.dart';
 import 'package:foodninja/presentation/explore_resturant/views/explore_resturant.dart';
 import 'package:foodninja/presentation/filter/view/filter.dart';
+import 'package:foodninja/presentation/finish_order/views/finish_order.dart';
 import 'package:foodninja/presentation/navigation_bar/navigation_bar.dart';
 import 'package:foodninja/presentation/notificion_success/notifiction_success.dart';
 import 'package:foodninja/presentation/on_boarding/views/page_view.dart';
@@ -42,6 +43,7 @@ class AppRouter {
   static const kexploremenu = '/exploremenu';
   static const kchatdeatils = '/chatdeatils';
   static const kcallringing = '/callringing';
+   static const kfinishorder = '/finishorder';
   static final router = GoRouter(
     routes: [
       GoRoute(path: '/', builder: (context, state) => SplashView()),
@@ -80,6 +82,7 @@ class AppRouter {
       GoRoute(path: kexploremenu, builder: (context, state) => ExploreMenu()),
       GoRoute(path: kchatdeatils, builder: (context, state) => ChatDeatils()),
       GoRoute(path: kcallringing, builder: (context, state) => CallRinging()),
+        GoRoute(path: kfinishorder, builder: (context, state) => FinishOrder()),
     ],
   );
 }

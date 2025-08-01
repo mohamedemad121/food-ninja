@@ -31,4 +31,5 @@ class ImageManger {
   static const leslie = 'assets/images/leslie.png';
   static const ringing = 'assets/images/ringing.png';
   static const volume = 'assets/images/Volume Up.png';
+  static const finishorder = 'assets/images/finish_order.png';
 }

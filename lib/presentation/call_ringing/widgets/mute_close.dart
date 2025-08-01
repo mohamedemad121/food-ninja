@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:foodninja/core/constant/app_router.dart';
 import 'package:foodninja/core/constant/image_manger.dart';
 import 'package:foodninja/core/constant/svg_manger.dart';
+import 'package:go_router/go_router.dart';
 
 class MuteClose extends StatefulWidget {
   const MuteClose({super.key});
@@ -39,9 +41,14 @@ class _MuteCloseState extends State<MuteClose> {
         SizedBox(
           height: 78,
           width: 78,
-          child: CircleAvatar(
-            backgroundColor: Colors.red,
-            child: SvgPicture.asset(SvgManger.x),
+          child: InkWell(
+            onTap: () {
+              context.push(AppRouter.kfinishorder);
+            },
+            child: CircleAvatar(
+              backgroundColor: Colors.red,
+              child: SvgPicture.asset(SvgManger.x),
+            ),
           ),
         ),
       ],
