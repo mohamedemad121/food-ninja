@@ -34,4 +34,6 @@ class ImageManger {
   static const finishorder = 'assets/images/finish_order.png';
   static const ratefood = 'assets/images/ratefood.png';
   static const rateresturant = 'assets/images/rateresturant.png';
+  static const framevoucher = 'assets/images/Frame.png';
+  static const framevoucher2 = 'assets/images/Frame (1).png';
 }

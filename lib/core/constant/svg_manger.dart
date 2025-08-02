@@ -26,4 +26,7 @@ class SvgManger {
   static const star = 'assets/svg/Star.svg';
   static const star2 = 'assets/svg/Star2.svg';
   static const editicon = 'assets/svg/edit Icon.svg';
+  static const checked = 'assets/svg/checked (1) 1.svg';
+  static const dolar = 'assets/svg/dolar.svg';
+  static const xbutton = 'assets/svg/x-button 1.svg';
 }

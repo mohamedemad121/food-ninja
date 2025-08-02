@@ -15,7 +15,7 @@ class ChatView extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              ChatStack(imagephoto: ImageManger.pattern2),
+              ChatStack(imagephoto: ImageManger.pattern2,text: 'Chat',),
               SizedBox(height: 12),
               SizedBox(
                 height: MediaQuery.of(context).size.height * (400 / 812),

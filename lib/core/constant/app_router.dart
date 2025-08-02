@@ -21,6 +21,8 @@ import 'package:foodninja/presentation/splash_view/splash_view.dart';
 import 'package:foodninja/presentation/uploadphoto1/views/upload_photo1.dart';
 import 'package:foodninja/presentation/verifiction_code/views/verifiction_code.dart';
 import 'package:foodninja/presentation/via_method/views/via_method.dart';
+import 'package:foodninja/presentation/voucher_notifiction/views/voucher_notifiction.dart';
+import 'package:foodninja/presentation/voucherpromo/views/voucher_promo.dart';
 import 'package:go_router/go_router.dart';
 
 class AppRouter {
@@ -48,6 +50,8 @@ class AppRouter {
   static const kfinishorder = '/finishorder';
   static const kratefood = '/ratefood';
   static const krateresturant= '/rateresturant';
+   static const kvoucherpromo= '/voucherpromo';
+   static const kvouchernotifiction= '/vouchernotifiction';
   static final router = GoRouter(
     routes: [
       GoRoute(path: '/', builder: (context, state) => SplashView()),
@@ -89,6 +93,8 @@ class AppRouter {
       GoRoute(path: kfinishorder, builder: (context, state) => FinishOrder()),
       GoRoute(path: kratefood, builder: (context, state) => RateFood()),
       GoRoute(path: krateresturant, builder: (context, state) => RateResturant()),
+      GoRoute(path: kvoucherpromo, builder: (context, state) => VoucherPromo()),
+       GoRoute(path: kvouchernotifiction, builder: (context, state) => VoucherNotifiction()),
     ],
   );
 }
