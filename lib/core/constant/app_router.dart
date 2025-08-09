@@ -8,6 +8,7 @@ import 'package:foodninja/presentation/navigation_bar/navigation_bar.dart';
 import 'package:foodninja/presentation/notificion_success/notifiction_success.dart';
 import 'package:foodninja/presentation/on_boarding/views/page_view.dart';
 import 'package:foodninja/presentation/on_boarding/widgets/on_boarding2.dart';
+import 'package:foodninja/presentation/order_details/views/order_details.dart';
 import 'package:foodninja/presentation/password/password.dart';
 import 'package:foodninja/presentation/paymentview/views/payment_view.dart';
 import 'package:foodninja/presentation/rate_food/rate_food.dart';
@@ -49,9 +50,10 @@ class AppRouter {
   static const kcallringing = '/callringing';
   static const kfinishorder = '/finishorder';
   static const kratefood = '/ratefood';
-  static const krateresturant= '/rateresturant';
-   static const kvoucherpromo= '/voucherpromo';
-   static const kvouchernotifiction= '/vouchernotifiction';
+  static const krateresturant = '/rateresturant';
+  static const kvoucherpromo = '/voucherpromo';
+  static const kvouchernotifiction = '/vouchernotifiction';
+  static const korderdetails = '/orderdetails';
   static final router = GoRouter(
     routes: [
       GoRoute(path: '/', builder: (context, state) => SplashView()),
@@ -92,9 +94,16 @@ class AppRouter {
       GoRoute(path: kcallringing, builder: (context, state) => CallRinging()),
       GoRoute(path: kfinishorder, builder: (context, state) => FinishOrder()),
       GoRoute(path: kratefood, builder: (context, state) => RateFood()),
-      GoRoute(path: krateresturant, builder: (context, state) => RateResturant()),
+      GoRoute(
+        path: krateresturant,
+        builder: (context, state) => RateResturant(),
+      ),
       GoRoute(path: kvoucherpromo, builder: (context, state) => VoucherPromo()),
-       GoRoute(path: kvouchernotifiction, builder: (context, state) => VoucherNotifiction()),
+      GoRoute(
+        path: kvouchernotifiction,
+        builder: (context, state) => VoucherNotifiction(),
+      ),
+      GoRoute(path: korderdetails, builder: (context, state) => OrderDetails()),
     ],
   );
 }

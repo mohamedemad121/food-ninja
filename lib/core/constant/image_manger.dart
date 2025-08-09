@@ -4,7 +4,6 @@ class ImageManger {
   static const onboardingimage1 = 'assets/images/Illustartion1.png';
   static const onboardingimage2 = 'assets/images/Illustration2.png';
   static const facebook = 'assets/images/facebook-3 1@2x.png';
-
   static const google = 'assets/images/google-icon 1.png';
   static const profile = 'assets/images/Profile.png';
   static const messege = 'assets/images/Message.png';
@@ -18,7 +17,6 @@ class ImageManger {
   static const smart = 'assets/images/smart.png';
   static const vegan = 'assets/images/vegan.png';
   static const recto = 'assets/images/recto.png';
-
   static const healthy = 'assets/images/healthy.png';
   static const goodfood = 'assets/images/goodfood.png';
   static const chef = 'assets/images/chef.png';
@@ -36,4 +34,8 @@ class ImageManger {
   static const rateresturant = 'assets/images/rateresturant.png';
   static const framevoucher = 'assets/images/Frame.png';
   static const framevoucher2 = 'assets/images/Frame (1).png';
+  static const crap1 = 'assets/images/crap1.png';
+  static const crap2 = 'assets/images/crap2.png';
+  static const crap3 = 'assets/images/crap3.png';
+  static const plus = 'assets/images/Path.png';
 }
