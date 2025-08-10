@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:foodninja/core/constant/app_router.dart';
 import 'package:foodninja/core/constant/image_manger.dart';
 import 'package:foodninja/core/constant/svg_manger.dart';
 import 'package:foodninja/presentation/order_details/widgets/add_delete_cont.dart';
 import 'package:foodninja/presentation/order_details/widgets/bootom_sheet_deatils.dart';
 import 'package:foodninja/presentation/order_details/widgets/order_info.dart';
+import 'package:go_router/go_router.dart';
 
 class ContOrderDetails extends StatefulWidget {
   const ContOrderDetails({super.key, required this.image});
@@ -30,7 +32,12 @@ class _ContOrderDetailsState extends State<ContOrderDetails> {
           builder:
               (context) => Padding(
                 padding: const EdgeInsets.symmetric(vertical: 18),
-                child: BottomSheetDeatils(image: ImageManger.rectangle),
+                child: BottomSheetDeatils(
+                  onTap: () {
+                    context.push(AppRouter.kpaymentorder);
+                  },
+                  image: ImageManger.rectangle,
+                ),
               ),
         );
       },

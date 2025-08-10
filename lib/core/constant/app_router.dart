@@ -1,5 +1,6 @@
 import 'package:foodninja/presentation/call_ringing/views/call_ringing.dart';
 import 'package:foodninja/presentation/chat_deatils/views/chat_deatils.dart';
+import 'package:foodninja/presentation/edit_payment/views/edit_payment.dart';
 import 'package:foodninja/presentation/explore_menu/explore_menu.dart';
 import 'package:foodninja/presentation/explore_resturant/views/explore_resturant.dart';
 import 'package:foodninja/presentation/filter/view/filter.dart';
@@ -56,6 +57,7 @@ class AppRouter {
   static const kvouchernotifiction = '/vouchernotifiction';
   static const korderdetails = '/orderdetails';
   static const kpaymentorder = '/paymentorder';
+  static const keditpayment = '/editpayment';
   static final router = GoRouter(
     routes: [
       GoRoute(path: '/', builder: (context, state) => SplashView()),
@@ -107,6 +109,7 @@ class AppRouter {
       ),
       GoRoute(path: korderdetails, builder: (context, state) => OrderDetails()),
       GoRoute(path: kpaymentorder, builder: (context, state) => PaymentOrder()),
+      GoRoute(path: keditpayment, builder: (context, state) => EditPayment()),
     ],
   );
 }
