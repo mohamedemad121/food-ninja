@@ -38,4 +38,6 @@ class ImageManger {
   static const crap2 = 'assets/images/crap2.png';
   static const crap3 = 'assets/images/crap3.png';
   static const plus = 'assets/images/Path.png';
+  static const rectangle = 'assets/images/Rectangle 15.png';
+  static const pattern4 = 'assets/images/Pattern4.png';
 }

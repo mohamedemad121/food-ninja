@@ -10,12 +10,21 @@ class OrderDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            ChatStack(text: 'Order Deatils', imagephoto: ImageManger.pattern2),
-            SizedBox(height: 20),
-            ContOrderDetails(),
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              ChatStack(
+                text: 'Order Deatils',
+                imagephoto: ImageManger.pattern2,
+              ),
+              SizedBox(height: 20),
+              ContOrderDetails(image: ImageManger.crap1),
+              SizedBox(height: 20),
+              ContOrderDetails(image: ImageManger.crap1),
+              SizedBox(height: 20),
+              ContOrderDetails(image: ImageManger.crap1),
+            ],
+          ),
         ),
       ),
     );
