@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:foodninja/core/constant/app_router.dart';
+import 'package:foodninja/presentation/order_details/widgets/custom_button_order.dart';
 import 'package:foodninja/presentation/order_details/widgets/stack_order_deatils.dart';
+import 'package:go_router/go_router.dart';
 
 class BottomSheetDeatils extends StatelessWidget {
   const BottomSheetDeatils({super.key, required this.image});
@@ -16,6 +19,15 @@ class BottomSheetDeatils extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(top: 20),
             child: StackOrderDeatils(),
+          ),
+          Positioned(
+            top: 150,
+            left: 26,
+            child: CustomButtonOrder(
+              onTap: () {
+                context.push(AppRouter.kpaymentorder);
+              },
+            ),
           ),
         ],
       ),

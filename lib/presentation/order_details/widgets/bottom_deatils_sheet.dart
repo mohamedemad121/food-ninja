@@ -4,9 +4,10 @@ class BottomOrderInfoSheet extends StatelessWidget {
   const BottomOrderInfoSheet({
     super.key,
     required this.text,
-    required this.text2,
+    required this.text2,required this.size,
   });
   final String text, text2;
+  final double size;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -18,7 +19,7 @@ class BottomOrderInfoSheet extends StatelessWidget {
             text,
             style: TextStyle(
               color: Color(0xffFEFEFF),
-              fontSize: 14,
+              fontSize: size,
               fontFamily: 'assets/fonts/BentonSansMedium.otf',
             ),
           ),
@@ -27,7 +28,7 @@ class BottomOrderInfoSheet extends StatelessWidget {
             text2,
             style: TextStyle(
               color: Color(0xffFEFEFF),
-              fontSize: 14,
+              fontSize: size,
               fontFamily: 'assets/fonts/BentonSansMedium.otf',
             ),
           ),

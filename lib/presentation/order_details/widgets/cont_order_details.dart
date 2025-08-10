@@ -5,10 +5,16 @@ import 'package:foodninja/presentation/order_details/widgets/add_delete_cont.dar
 import 'package:foodninja/presentation/order_details/widgets/bootom_sheet_deatils.dart';
 import 'package:foodninja/presentation/order_details/widgets/order_info.dart';
 
-class ContOrderDetails extends StatelessWidget {
+class ContOrderDetails extends StatefulWidget {
   const ContOrderDetails({super.key, required this.image});
   final String image;
 
+  @override
+  State<ContOrderDetails> createState() => _ContOrderDetailsState();
+}
+
+class _ContOrderDetailsState extends State<ContOrderDetails> {
+  int count = 0;
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
@@ -40,15 +46,35 @@ class ContOrderDetails extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 11),
           child: Row(
             children: [
-              Image.asset(image),
+              Image.asset(widget.image),
               SizedBox(width: 21),
               OrderInfo(),
               SizedBox(width: 31),
-              AddDeleteCont(svg: SvgManger.delete),
+              GestureDetector(
+                onTap: () {
+                  setState(() {
+                    count--;
+                  });
+                },
+                child: AddDeleteCont(
+                  color: Color(0xffebfbf3),
+                  svg: SvgManger.delete,
+                  edgeInsets: EdgeInsets.symmetric(horizontal: 8, vertical: 12),
+                ),
+              ),
               SizedBox(width: 16),
-              Text('1'),
+              Text('$count'),
               SizedBox(width: 16),
-              AddDeleteCont(),
+              GestureDetector(
+                onTap: () {
+                  setState(() {
+                    count++;
+                  });
+                },
+                child: AddDeleteCont(
+                  edgeInsets: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                ),
+              ),
             ],
           ),
         ),

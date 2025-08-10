@@ -10,6 +10,7 @@ import 'package:foodninja/presentation/on_boarding/views/page_view.dart';
 import 'package:foodninja/presentation/on_boarding/widgets/on_boarding2.dart';
 import 'package:foodninja/presentation/order_details/views/order_details.dart';
 import 'package:foodninja/presentation/password/password.dart';
+import 'package:foodninja/presentation/payment_order/views/payment_order.dart';
 import 'package:foodninja/presentation/paymentview/views/payment_view.dart';
 import 'package:foodninja/presentation/rate_food/rate_food.dart';
 import 'package:foodninja/presentation/rate_resturant/rate_resturant.dart';
@@ -54,6 +55,7 @@ class AppRouter {
   static const kvoucherpromo = '/voucherpromo';
   static const kvouchernotifiction = '/vouchernotifiction';
   static const korderdetails = '/orderdetails';
+  static const kpaymentorder = '/paymentorder';
   static final router = GoRouter(
     routes: [
       GoRoute(path: '/', builder: (context, state) => SplashView()),
@@ -104,6 +106,7 @@ class AppRouter {
         builder: (context, state) => VoucherNotifiction(),
       ),
       GoRoute(path: korderdetails, builder: (context, state) => OrderDetails()),
+      GoRoute(path: kpaymentorder, builder: (context, state) => PaymentOrder()),
     ],
   );
 }
