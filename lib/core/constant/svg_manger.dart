@@ -33,4 +33,5 @@ class SvgManger {
   static const delete = 'assets/svg/Path.svg';
   static const search = 'assets/svg/search.svg';
   static const timetrack = 'assets/svg/Time Tracking.svg';
+  static const back = 'assets/svg/back.svg';
 }

@@ -43,4 +43,5 @@ class ImageManger {
   static const maps = 'assets/images/Maps.png';
   static const rader = 'assets/images/Pin Radar.png';
   static const trackmap = 'assets/images/Car Track.png';
+  static const tracpattern = 'assets/images/trackpattern.png';
 }

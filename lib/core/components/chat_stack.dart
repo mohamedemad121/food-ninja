@@ -31,7 +31,7 @@ class ChatStack extends StatelessWidget {
               Positioned(
                 left: 17,
                 top: 14,
-                child: SvgPicture.asset(SvgManger.icon),
+                child: SvgPicture.asset(SvgManger.back),
               ),
             ],
           ),

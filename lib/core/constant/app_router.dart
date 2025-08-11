@@ -23,7 +23,7 @@ import 'package:foodninja/presentation/sign_up/view/sign_up.dart';
 import 'package:foodninja/presentation/sign_up_success/views/sign_up_notifiction.dart';
 import 'package:foodninja/presentation/sing_in_process/views/sign_in_process.dart';
 import 'package:foodninja/presentation/splash_view/splash_view.dart';
-import 'package:foodninja/presentation/track_order/track_order.dart';
+import 'package:foodninja/presentation/track_order/views/track_order.dart';
 import 'package:foodninja/presentation/uploadphoto1/views/upload_photo1.dart';
 import 'package:foodninja/presentation/verifiction_code/views/verifiction_code.dart';
 import 'package:foodninja/presentation/via_method/views/via_method.dart';
