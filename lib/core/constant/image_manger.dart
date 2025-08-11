@@ -40,4 +40,7 @@ class ImageManger {
   static const plus = 'assets/images/Path.png';
   static const rectangle = 'assets/images/Rectangle 15.png';
   static const pattern4 = 'assets/images/Pattern4.png';
+  static const maps = 'assets/images/Maps.png';
+  static const rader = 'assets/images/Pin Radar.png';
+  static const trackmap = 'assets/images/Car Track.png';
 }

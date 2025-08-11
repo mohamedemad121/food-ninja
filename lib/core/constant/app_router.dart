@@ -17,7 +17,7 @@ import 'package:foodninja/presentation/paymentview/views/payment_view.dart';
 import 'package:foodninja/presentation/rate_food/rate_food.dart';
 import 'package:foodninja/presentation/rate_resturant/rate_resturant.dart';
 import 'package:foodninja/presentation/set_location/views/set_location.dart';
-import 'package:foodninja/presentation/set_location_map/set_location_map.dart';
+import 'package:foodninja/presentation/set_location_map/views/set_location_map.dart';
 import 'package:foodninja/presentation/sign_in/views/sign_in_view.dart';
 import 'package:foodninja/presentation/sign_up/view/sign_up.dart';
 import 'package:foodninja/presentation/sign_up_success/views/sign_up_notifiction.dart';

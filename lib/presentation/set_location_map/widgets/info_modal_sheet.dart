@@ -1,29 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:foodninja/core/components/custom_buttom2.dart';
 import 'package:foodninja/core/constant/app_router.dart';
 import 'package:foodninja/core/constant/svg_manger.dart';
 import 'package:go_router/go_router.dart';
 
-class ContainerInfo extends StatelessWidget {
-  const ContainerInfo({
-    super.key,
-    required this.text1,
-    required this.text2,
-    this.text3,
-    this.edgeInsets,
-  });
-  final String text1, text2;
-  final String? text3;
-  final EdgeInsets? edgeInsets;
+class InfoModalSheet extends StatelessWidget {
+  const InfoModalSheet({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 17, left: 12),
+      padding: const EdgeInsets.only(top: 24, left: 10),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            text1,
+            'Order Location',
             style: TextStyle(
               fontSize: 14,
               color: Colors.grey,
@@ -36,7 +29,7 @@ class ContainerInfo extends StatelessWidget {
               SvgPicture.asset(SvgManger.location),
               SizedBox(width: 14),
               Text(
-                text2,
+                '4517 Washington Ave. Manchester,\n Kentucky 39495',
                 style: TextStyle(
                   fontSize: 15,
                   color: Colors.black,
@@ -47,25 +40,11 @@ class ContainerInfo extends StatelessWidget {
             ],
           ),
           SizedBox(height: 20),
-          ShaderMask(
-            shaderCallback:
-                (bounds) => LinearGradient(
-                  colors: [Color(0xff62e798), Color(0xff1ac179)],
-                  begin: Alignment.centerLeft,
-                  end: Alignment.centerRight,
-                ).createShader(Rect.fromLTWH(0, 0, 110, bounds.height)),
-            child: Padding(
-              padding: edgeInsets ?? EdgeInsets.zero,
-              child: InkWell(
-                onTap: () {
-                  context.push(AppRouter.ksetlocatinmap);
-                },
-                child: Text(
-                  text3 ?? '',
-                  style: TextStyle(color: Colors.white, fontSize: 14),
-                ),
-              ),
-            ),
+          InkWell(
+            onTap: () {
+              context.push(AppRouter.ktrackorder);
+            },
+            child: CustomButtom2(text: 'Set location'),
           ),
         ],
       ),

@@ -29,6 +29,8 @@ class SvgManger {
   static const checked = 'assets/svg/checked (1) 1.svg';
   static const dolar = 'assets/svg/dolar.svg';
   static const xbutton = 'assets/svg/x-button 1.svg';
- 
+
   static const delete = 'assets/svg/Path.svg';
+  static const search = 'assets/svg/search.svg';
+  static const timetrack = 'assets/svg/Time Tracking.svg';
 }
