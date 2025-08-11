@@ -1,5 +1,6 @@
 import 'package:foodninja/presentation/call_ringing/views/call_ringing.dart';
 import 'package:foodninja/presentation/chat_deatils/views/chat_deatils.dart';
+import 'package:foodninja/presentation/edit_location/views/edit_location.dart';
 import 'package:foodninja/presentation/edit_payment/views/edit_payment.dart';
 import 'package:foodninja/presentation/explore_menu/explore_menu.dart';
 import 'package:foodninja/presentation/explore_resturant/views/explore_resturant.dart';
@@ -16,11 +17,13 @@ import 'package:foodninja/presentation/paymentview/views/payment_view.dart';
 import 'package:foodninja/presentation/rate_food/rate_food.dart';
 import 'package:foodninja/presentation/rate_resturant/rate_resturant.dart';
 import 'package:foodninja/presentation/set_location/views/set_location.dart';
+import 'package:foodninja/presentation/set_location_map/set_location_map.dart';
 import 'package:foodninja/presentation/sign_in/views/sign_in_view.dart';
 import 'package:foodninja/presentation/sign_up/view/sign_up.dart';
 import 'package:foodninja/presentation/sign_up_success/views/sign_up_notifiction.dart';
 import 'package:foodninja/presentation/sing_in_process/views/sign_in_process.dart';
 import 'package:foodninja/presentation/splash_view/splash_view.dart';
+import 'package:foodninja/presentation/track_order/track_order.dart';
 import 'package:foodninja/presentation/uploadphoto1/views/upload_photo1.dart';
 import 'package:foodninja/presentation/verifiction_code/views/verifiction_code.dart';
 import 'package:foodninja/presentation/via_method/views/via_method.dart';
@@ -58,6 +61,10 @@ class AppRouter {
   static const korderdetails = '/orderdetails';
   static const kpaymentorder = '/paymentorder';
   static const keditpayment = '/editpayment';
+  static const keditlocation = '/editlocation';
+
+  static const ksetlocatinmap = '/setlocatinmap';
+  static const ktrackorder = '/trackorder';
   static final router = GoRouter(
     routes: [
       GoRoute(path: '/', builder: (context, state) => SplashView()),
@@ -110,6 +117,13 @@ class AppRouter {
       GoRoute(path: korderdetails, builder: (context, state) => OrderDetails()),
       GoRoute(path: kpaymentorder, builder: (context, state) => PaymentOrder()),
       GoRoute(path: keditpayment, builder: (context, state) => EditPayment()),
+      GoRoute(path: keditlocation, builder: (context, state) => EditLocation()),
+
+      GoRoute(
+        path: ksetlocatinmap,
+        builder: (context, state) => SetLocationMap(),
+      ),
+      GoRoute(path: ktrackorder, builder: (context, state) => TrackOrder()),
     ],
   );
 }

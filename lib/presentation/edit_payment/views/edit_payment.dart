@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:foodninja/core/components/chat_stack.dart';
-import 'package:foodninja/core/constant/image_manger.dart';
 import 'package:foodninja/core/constant/svg_manger.dart';
 import 'package:foodninja/presentation/edit_payment/widgets/edit_payment_cont.dart';
 
@@ -13,7 +12,7 @@ class EditPayment extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            ChatStack(text: 'Order Deatils', imagephoto: ImageManger.pattern2),
+            ChatStack(text: 'Order Deatils', ),
             SizedBox(height: 20),
             EditPaymentCont(
               color1: 0xffFFFFFF,

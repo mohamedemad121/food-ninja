@@ -4,8 +4,7 @@ import 'package:foodninja/core/constant/image_manger.dart';
 import 'package:foodninja/core/constant/svg_manger.dart';
 
 class ChatStack extends StatelessWidget {
-  const ChatStack({super.key, this.imagephoto, required this.text});
-  final String? imagephoto;
+  const ChatStack({super.key, required this.text});
   final String text;
   @override
   Widget build(BuildContext context) {
@@ -17,10 +16,7 @@ class ChatStack extends StatelessWidget {
           height: screenheight * (146 / 812),
           child: Align(
             alignment: Alignment.topRight,
-            child:
-                imagephoto != null
-                    ? Image.asset(imagephoto!)
-                    : Image.asset(ImageManger.check),
+            child: Image.asset(ImageManger.pattern2),
           ),
         ),
 
@@ -45,7 +41,7 @@ class ChatStack extends StatelessWidget {
           left: screenwidth * (25 / 375),
 
           child: Text(
-           text,
+            text,
             style: TextStyle(
               fontSize: 25,
               fontFamily: 'BentonSansbold',

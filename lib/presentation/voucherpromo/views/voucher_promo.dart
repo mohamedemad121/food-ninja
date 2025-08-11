@@ -15,7 +15,7 @@ class VoucherPromo extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            ChatStack(imagephoto: ImageManger.pattern2,text: 'Voucher Promo',),
+            ChatStack(text: 'Voucher Promo',),
             SizedBox(height: 20),
             VoucherStack(
               image: ImageManger.framevoucher,

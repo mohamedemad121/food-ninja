@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:foodninja/core/components/chat_stack.dart';
 import 'package:foodninja/core/constant/app_router.dart';
-import 'package:foodninja/core/constant/image_manger.dart';
 import 'package:foodninja/core/constant/svg_manger.dart';
 import 'package:foodninja/presentation/payment_order/widgets/payment_cont_deatils.dart';
 import 'package:go_router/go_router.dart';
@@ -15,8 +14,11 @@ class PaymentOrder extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            ChatStack(text: 'Confirm Order', imagephoto: ImageManger.pattern2),
+            ChatStack(text: 'Confirm Order', ),
             PaymentContDeatils(
+              onTap2: () {
+                context.push(AppRouter.keditlocation);
+              },
               font: 'BentonSansbold',
               text1: 'Deliver To ',
               width: 14,

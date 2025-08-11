@@ -15,7 +15,7 @@ class OrderDetails extends StatelessWidget {
             children: [
               ChatStack(
                 text: 'Order Deatils',
-                imagephoto: ImageManger.pattern2,
+                
               ),
               SizedBox(height: 20),
               ContOrderDetails(image: ImageManger.crap1),
