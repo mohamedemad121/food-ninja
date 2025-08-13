@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:foodninja/core/constant/image_manger.dart';
+import 'package:foodninja/presentation/track_order/widgets/track_call.dart';
 
 class TrackInfo extends StatelessWidget {
   const TrackInfo({super.key});
@@ -18,6 +19,7 @@ class TrackInfo extends StatelessWidget {
           SizedBox.expand(
             child: Image.asset(ImageManger.tracpattern, fit: BoxFit.cover),
           ),
+          Positioned(top: 20, left: 20, right: 9, child: TrackCall()),
         ],
       ),
     );

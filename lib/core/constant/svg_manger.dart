@@ -34,4 +34,7 @@ class SvgManger {
   static const search = 'assets/svg/search.svg';
   static const timetrack = 'assets/svg/Time Tracking.svg';
   static const back = 'assets/svg/back.svg';
+  static const iconmap = 'assets/svg/Icon maps.svg';
+  static const pathcont = 'assets/svg/Path (4).svg';
+  static const pathicon = 'assets/svg/Path (5).svg';
 }
