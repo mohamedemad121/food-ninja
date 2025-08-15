@@ -37,8 +37,10 @@ class SvgManger {
   static const iconmap = 'assets/svg/Icon maps.svg';
   static const pathcont = 'assets/svg/Path (4).svg';
   static const pathicon = 'assets/svg/Path (5).svg';
-  static const diannea = 'assets/svg/diannea.svg';
-  static const dianneb = 'assets/svg/dianneb.svg';
+
   static const iconloc = 'assets/svg/Icon Location.svg';
   static const iconlove = 'assets/svg/Icon Love.svg';
+  static const star3 = 'assets/svg/Icon Star.svg';
+  static const mappin = 'assets/svg/Icon map-pin.svg';
+  static const star4 = 'assets/svg/Icon Star (1).svg';
 }

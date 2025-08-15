@@ -48,4 +48,5 @@ class ImageManger {
   static const pizza = 'assets/images/image 34.png';
   static const meat = 'assets/images/image 32.png';
   static const photorest = 'assets/images/Photo Restaurant.png';
+  static const dianne = 'assets/images/dianne.png';
 }
