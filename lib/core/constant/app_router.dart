@@ -1,5 +1,6 @@
 import 'package:foodninja/presentation/call_ringing/views/call_ringing.dart';
 import 'package:foodninja/presentation/chat_deatils/views/chat_deatils.dart';
+import 'package:foodninja/presentation/detail_product/views/detail_product.dart';
 import 'package:foodninja/presentation/edit_location/views/edit_location.dart';
 import 'package:foodninja/presentation/edit_payment/views/edit_payment.dart';
 import 'package:foodninja/presentation/explore_menu/explore_menu.dart';
@@ -65,6 +66,7 @@ class AppRouter {
 
   static const ksetlocatinmap = '/setlocatinmap';
   static const ktrackorder = '/trackorder';
+  static const kdeatilproduct = '/deatilproduct';
   static final router = GoRouter(
     routes: [
       GoRoute(path: '/', builder: (context, state) => SplashView()),
@@ -124,6 +126,10 @@ class AppRouter {
         builder: (context, state) => SetLocationMap(),
       ),
       GoRoute(path: ktrackorder, builder: (context, state) => TrackOrder()),
+      GoRoute(
+        path: kdeatilproduct,
+        builder: (context, state) => DetailProduct(),
+      ),
     ],
   );
 }

@@ -45,4 +45,7 @@ class ImageManger {
   static const trackmap = 'assets/images/Car Track.png';
   static const tracpattern = 'assets/images/trackpattern.png';
   static const tracorderimage = 'assets/images/Photo Profile.png';
+  static const pizza = 'assets/images/image 34.png';
+  static const meat = 'assets/images/image 32.png';
+  static const photorest = 'assets/images/Photo Restaurant.png';
 }
